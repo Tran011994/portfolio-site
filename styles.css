@@ -13,12 +13,28 @@ html, body {
     padding: 0;
 }
 
+h1, h3, .footer-text {
+    font-family: Cabin, Arial, sans-serif;
+    color: #0d7377;
+}
+
+h1:hover, h3:hover, .footer-text:hover {
+    color: #14ffec;
+    -webkit-transition: color 1s;
+}
+
+
+
+
 /* Nav Section */
+
 .nav-bar {
     display: flex;
     width: 100%;
     justify-content: center;
     background: #212121;
+    position: fixed;
+    z-index: 2;
 }
 
 .nav-content {
@@ -26,6 +42,17 @@ html, body {
     justify-items: center;
     width: 50%;
     text-align: center;
+    font-family: Cabin, Arial, sans-serif;
+}
+
+.nav-content a {
+    border-bottom: 2px solid #0d7377;
+}
+
+.nav-content a:hover {
+    background: #323232;
+    color: #14ffec;
+    -webkit-transition: color 1s;
 }
 
 .nav-item {
@@ -35,7 +62,52 @@ html, body {
     font-size: 2rem;
 }
 
+
+
+
+/* Page Title and Subtitle */
+
+.top-title {
+    background: #323232;
+    margin: 0;
+}
+
+.page-title {
+    padding-top: 15rem;
+    padding-left: 2rem;
+    font-size: 5rem;
+    text-decoration: underline;
+}
+
+.page-subtitle {
+    padding: 2rem 0 20rem 10rem;
+    font-family: Lobster, Arial, sans-serif;
+    color: #0d7377;
+    font-size: 3rem;
+}
+
+
+
+
+
 /* About Section */
+
+#about {
+    background: #212121;
+    margin: 0;
+    padding: 10rem 2rem;
+}
+
+.about-title {
+    margin: 0;
+    font-size: 3rem;
+    padding-left: 1rem;
+}
+
+.about-text {
+    font-size: 1.5rem;
+    color: #0d7377
+}
 
 /* Project Pictures */
 
@@ -47,11 +119,21 @@ html, body {
 .project-picture {
     flex: 1 1 50%;
     width: 40%;
-    height: 50vh;
+    height: 45vh;
     margin: 1rem;
 }
 
+
+
+
+
+
 /* Projects Section */
+
+#projects {
+    background: #323232;
+    padding: 10rem 0;
+}
 
 .projects-container {
     display: flex;
@@ -82,6 +164,73 @@ html, body {
     position: relative;
     z-index: 1;
 }
+
+
+
+
+
+
+/* Contact Section */
+
+#contact {
+    background: #212121;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 10rem 0;
+}
+
+.contact-title {
+    margin: 0;
+    padding-top: 1.5rem;
+}
+
+.contact-form-container {
+    padding: 2rem 0;
+    width: 30%;
+}
+
+.contacts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts-container label {
+    text-align: left;
+}
+
+.contact-box {
+    width: 80%;
+    margin-bottom: .25rem;
+    height: 2rem;
+}
+
+.message-box {
+    height: 5rem;
+}
+
+.submit-button {
+    margin-top: 3rem;
+    width: 50%;
+}
+
+/* Footer Section */
+#footer {
+    background: #323232;
+}
+
+.footer-text {
+    margin: 0;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+
+
+
+
 
 /** class for dropdowns **/
 
