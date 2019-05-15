@@ -1,0 +1,32 @@
+html {
+    box-sizing: border-box;
+}
+
+*, 
+*:before, 
+*:after {
+  box-sizing: inherit;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Projects Section */
+
+.projects-container {
+    display: flex;
+    position: relative;
+}
+
+.link-items {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+/** class for dropdowns **/
+.show {
+    display: block;
+}
