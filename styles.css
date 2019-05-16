@@ -24,7 +24,9 @@ h1:hover, h3:hover, .footer-text:hover {
 }
 
 
-
+#header {
+    width: 100%;
+}
 
 /* Nav Section */
 
@@ -213,7 +215,7 @@ h1:hover, h3:hover, .footer-text:hover {
 }
 
 .project-button:hover, .project-button:focus {
-    color: #323b3b;
+    color: #14ffec;
     background: #323232;
     -webkit-transition: color 1s;
     outline: none;
