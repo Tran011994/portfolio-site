@@ -14,6 +14,7 @@ for (var i = 0; i < allButtons.length; i++) {
 }
 
 //Close drop downs when clicks are made outside of dropdown menu
+
 window.onclick = function(event) {
   if (!event.target.matches('.project-button')) {
     var dropLinks = document.querySelectorAll('.link-items');
@@ -28,6 +29,7 @@ window.onclick = function(event) {
 };
 
 //Function for smooth scrolling through page
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -36,4 +38,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             behavior: 'smooth'
         });
     });
+});
+
+//JQuery Dropdown function for nav
+
+$('.bars-button').click(function() {
+  $('.slide-container').slideToggle();
+  $('.slide-container').toggleClass('dropdown');
 });

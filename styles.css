@@ -39,12 +39,22 @@ h1:hover, h3:hover, .footer-text:hover {
     z-index: 2;
 }
 
+.bars-button {
+    display: none;
+}
+
+.slide-container {
+    display: flex;
+    width: 50%;
+}
+
+
 .nav-content {
     display: flex;
     font-family: Cabin, Arial, sans-serif;
     justify-items: center;
     text-align: center;
-    width: 50%;
+    width: 100%;
 }
 
 .nav-content a {
@@ -224,9 +234,12 @@ h1:hover, h3:hover, .footer-text:hover {
 .link-items {
     border-bottom: 3px solid #0d7377;
     color: #0d7377;
-    display: none;
+    display: block;
     font-family: Cabin, Arial, sans-serif;
     position: absolute;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    visibility: hidden;
     width: 15%;
     z-index: 1;
 }
@@ -322,8 +335,15 @@ h1:hover, h3:hover, .footer-text:hover {
 /** class for dropdowns **/
 
 .show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.dropdown {
     display: block;
 }
+
+
 
 /* Media Queries */
 
@@ -354,4 +374,40 @@ h1:hover, h3:hover, .footer-text:hover {
     .page-subtitle {
         padding: 2rem 0 10rem 5rem;
     }
+
+    .middle-pro-container {
+        width: 50%;
+    }
+
+    .project-button {
+        height: 10rem;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+    }
+
+    .slide-container {
+        display: none;
+        width: 100%;
+    }
+
+    .nav-content {
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+    }
+
+    .bars-button {
+        border-bottom: 2px solid #0d7377;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .fas {
+        color: #0d7377
+    }
+
 }
