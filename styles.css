@@ -377,21 +377,27 @@ h1:hover, h3:hover, .footer-text:hover {
 
     .middle-pro-container {
         width: 50%;
-    }
-
-    .project-button {
-        height: 10rem;
+        flex-wrap: wrap;
     }
 
     .projects-item {
-        width: 25%;
+        flex: 1 1 50%;
+        margin-bottom: 5rem;
     }
 
+    .project-picture {
+        height: 50vh;
+    }
+
+    .link-items{
+        width: 25%;
+    }
 
     .nav-bar {
         flex-direction: column;
         width: 100%;
     }
+
 
     .slide-container {
         display: none;
