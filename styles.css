@@ -65,7 +65,16 @@ h1:hover, h3:hover, .footer-text:hover {
 
 
 
-/* Page Title and Subtitle */
+/* Page Title and Subtitle + Logo */
+
+.title-container {
+    display: flex;
+}
+
+.title-item {
+    flex: 1 1 50%;
+    border-bottom: 5px solid #0d7377;
+}
 
 .top-title {
     background: #323232;
@@ -76,7 +85,6 @@ h1:hover, h3:hover, .footer-text:hover {
     padding-top: 15rem;
     padding-left: 2rem;
     font-size: 5rem;
-    text-decoration: underline;
 }
 
 .page-subtitle {
@@ -84,6 +92,18 @@ h1:hover, h3:hover, .footer-text:hover {
     font-family: Lobster, Arial, sans-serif;
     color: #0d7377;
     font-size: 3rem;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #212121;
+    border-left: 5px solid #0d7377;
+}
+
+.logo-image {
+    height: 30vh;
 }
 
 
@@ -96,18 +116,37 @@ h1:hover, h3:hover, .footer-text:hover {
     background: #212121;
     margin: 0;
     padding: 10rem 2rem;
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .about-title {
     margin: 0;
     font-size: 3rem;
-    padding-left: 1rem;
+    padding-bottom: 2rem;
+    text-decoration: underline;
 }
 
 .about-text {
     font-size: 1.5rem;
-    color: #0d7377
+    color: #0d7377;
+    margin-bottom: 10rem;
+    width: 50%;
 }
+
+.resume-button {
+    background: #0d7377;
+    border: 2px solid #323232;
+    border-radius: 25%;
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+}
+
 
 /* Project Pictures */
 
@@ -132,7 +171,13 @@ h1:hover, h3:hover, .footer-text:hover {
 
 #projects {
     background: #323232;
-    padding: 10rem 0;
+    padding: 2rem 0 5rem 0;
+    text-align: center;
+}
+
+.projects-title {
+    font-size: 3rem;
+    text-decoration: underline;
 }
 
 .projects-container {
@@ -147,22 +192,53 @@ h1:hover, h3:hover, .footer-text:hover {
     display: flex;
     width: 60%;
     justify-items: center;
-    text-align: center;
 }
 
 .projects-item {
     flex: 1 1 25%;
-    margin: 1rem;
+    margin: 2rem 0;
 }
 
 .project-button {
     width: 100%;
+    color: #0d7377;
+    background: #212121;
+    border: 2px solid #0d7377;
+    font-family: Cabin, Arial, sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    height: 4rem;
+}
+
+.project-button:hover, .project-button:focus {
+    color: #14ffec;
+    background: #323232;
+    -webkit-transition: color 1s;
+    outline: none;
 }
 
 .link-items {
     display: none;
-    position: relative;
+    position: absolute;
     z-index: 1;
+    color: #0d7377;
+    font-family: Cabin, Arial, sans-serif;
+    border-bottom: 3px solid #0d7377;
+    width: 15%;
+}
+
+.link-items a {
+    text-decoration: none;
+    color: #0d7377;
+}
+
+.link-items p {
+    margin: .5rem;
+}
+
+.link-items a:hover {
+    color: #14ffec;
+    -webkit-transition: color 1s;
 }
 
 
@@ -178,12 +254,14 @@ h1:hover, h3:hover, .footer-text:hover {
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    padding: 10rem 0;
+    padding: 5rem 0 10rem;
 }
 
 .contact-title {
+    font-size: 3rem;
     margin: 0;
     padding-top: 1.5rem;
+    padding-bottom: 1rem;
 }
 
 .contact-form-container {
@@ -205,6 +283,13 @@ h1:hover, h3:hover, .footer-text:hover {
     width: 80%;
     margin-bottom: .25rem;
     height: 2rem;
+    background: #212121;
+    border: 2px solid #0d7377;
+    color: #0d7377;
+}
+
+::placeholder {
+    color: #0d7377;
 }
 
 .message-box {
@@ -213,7 +298,7 @@ h1:hover, h3:hover, .footer-text:hover {
 
 .submit-button {
     margin-top: 3rem;
-    width: 50%;
+    width: 40%;
 }
 
 /* Footer Section */
