@@ -383,8 +383,14 @@ h1:hover, h3:hover, .footer-text:hover {
         height: 10rem;
     }
 
+    .projects-item {
+        width: 25%;
+    }
+
+
     .nav-bar {
         flex-direction: column;
+        width: 100%;
     }
 
     .slide-container {
